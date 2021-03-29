@@ -56,7 +56,7 @@ public class ControllerIhm {
     @FXML
     private Button commentBtn;
 
-    //BRANCHE BOUTON
+    //BRANCHE main
 /*
     @FXML
     private TextArea textArea;
