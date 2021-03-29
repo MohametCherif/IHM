@@ -1,0 +1,47 @@
+.root
+{
+	-fx-background-color: #67736B;
+	/*-fx-background-color:black;
+	-fx-background-color: #05ffb0;
+    -fx-background-color: transparent;*/
+}
+
+.buttonL {
+  -fx-display: inline-block;
+  -fx-border-radius: 4px;
+  -fx-background-color: #f4511e;
+  -fx-border: none;
+  -fx-color: #FFFFFF;
+  -fx-text-align: center;
+  -fx-font-size: 28px;
+  -fx-padding: 20px;
+  -fx-width: 200px;
+  -fx-transition: all 0.5s;
+  -fx-cursor: pointer;
+  -fx-margin: 5px;
+}
+
+.buttonL span {
+  -fx-cursor: pointer;
+  -fx-display: inline-block;
+  -fx-position: relative;
+  -fx-transition: 0.5s;
+}
+
+.buttonL span:after {
+  -fx-content: '\00bb';
+  -fx-position: absolute;
+  -fx-opacity: 0;
+  -fx-top: 0;
+  -fx-right: -20px;
+  -fx-transition: 0.5s;
+}
+
+.buttonL:hover span {
+  -fx-padding-right: 25px;
+}
+
+.buttonL:hover span:after {
+  -fx-opacity: 1;
+  -fx-right: 0;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="root" stylesheets="@../CSS/Menu.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerAbout">
+   <children>
+      <Button fx:id="backAbout" layoutX="97.0" layoutY="65.0" mnemonicParsing="false" onMouseClicked="#preAbout" text="Back" />
+      <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Banc_de_test_vie_serie/FàH_3D.png" />
+         </image>
+      </ImageView>
+      <TextArea blendMode="COLOR_BURN" layoutX="134.0" layoutY="134.0" prefHeight="349.0" prefWidth="654.0" styleClass="root" text="As of now, some reworks made by the after sales department on the storytellers cannot be evaluated. &#10;As such, some products are either not reworked or sent back with a prestation not 100% guaranteed &#10;due to the lack of tool able to perform an objective assessment.&#10;The purpose of the aftersales test bench is to replicate some features of the end of line test bench used on&#10; the assembly line in order to validate the different reworks.&#10;Moreover, the test bench will also have to fill a second objective: to perform several ageing tests to ensure&#10; the non-regression of the product during serial life.&#10;&#10;This test bench is to be focused exclusively on the Version 2 of My fabulous storyteller.&#10;It will be designed to be used by both French and US teams in their respective country.&#10;&#10;This software tool will help to monitor the test bench and to be able to set up new test scenario ." wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <InnerShadow choke="0.36" color="#2b512e" height="23.38" radius="15.3625" width="40.07" />
+         </effect>
+      </TextArea>
+   </children>
+</AnchorPane>

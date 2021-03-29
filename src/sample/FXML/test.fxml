@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/Menu.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerTest">
+   <children>
+      <ChoiceBox fx:id="cbtest" layoutX="224.0" layoutY="116.0" prefWidth="150.0" styleClass="button" />
+      <ImageView fitHeight="56.0" fitWidth="89.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Banc_de_test_vie_serie/FàH_3D.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="cbt" layoutX="225.0" layoutY="187.0" prefWidth="150.0" styleClass="button" />
+   </children>
+</AnchorPane>

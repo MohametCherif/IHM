@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="javafx-jmods-11.0">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/javafx-jmods-11.0.2" />
+      <root url="jar://$PROJECT_DIR$/jSerialComm-2.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/javafx-jmods-11.0.2" recursive="false" />
+  </library>
+</component>
