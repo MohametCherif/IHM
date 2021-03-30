@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
@@ -91,7 +92,7 @@
                <image>
                   <Image url="@../../../../../../../Banc_de_test_vie_serie/FàH_3D.png" />
                </image></ImageView>
-            <ChoiceBox fx:id="serialp" layoutX="138.0" layoutY="326.0" prefHeight="21.0" prefWidth="108.0" styleClass="button" />
+            <ChoiceBox fx:id="serialp" layoutX="138.0" layoutY="326.0" onMouseClicked="#PortSerie" prefHeight="21.0" prefWidth="108.0" styleClass="button" />
             <ChoiceBox fx:id="sceTest" layoutX="138.0" layoutY="250.0" prefHeight="21.0" prefWidth="108.0" styleClass="button" />
             <Label layoutX="51.0" layoutY="253.0" text="scenarios" textFill="#16d77d" />
             <TextArea id="info" fx:id="infos" layoutX="661.0" layoutY="134.0" opacity="0.61" prefHeight="290.0" prefWidth="225.0" promptText="FAH informations" styleClass="root">
@@ -101,6 +102,8 @@
                <effect>
                   <InnerShadow choke="0.23" color="#172812" height="50.65" radius="24.825" width="50.65" />
                </effect></TextArea>
+            <ComboBox fx:id="portCB" layoutX="135.0" layoutY="387.0" onMouseClicked="#PortSerie" prefHeight="22.0" prefWidth="115.0" />
+            <Label layoutX="59.0" layoutY="389.0" text=" port" textFill="#16d77d" />
       </children>
     </AnchorPane>
   </children>

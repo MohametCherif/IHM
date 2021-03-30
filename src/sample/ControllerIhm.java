@@ -11,10 +11,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -55,6 +52,12 @@ public class ControllerIhm {
 
     @FXML
     private Button commentBtn;
+
+    @FXML
+    private ComboBox<String> portCB;
+
+    @FXML
+    private Button RefreshBtn;
 
     //BRANCHE main
 /*
@@ -277,16 +280,23 @@ public class ControllerIhm {
 
 
         SerialPort comPort = SerialPort.getCommPorts()[0];
-        SerialPort[] allAvailableComPorts = SerialPort.getCommPorts();
-        //comPort.openPort();
+        //SerialPort[] allAvailableComPorts = SerialPort.getCommPorts();
+       // comPort.setBaudRate(2400);
+        comPort.openPort();
         comPort.setComPortTimeouts(SerialPort.TIMEOUT_READ_SEMI_BLOCKING, 0, 0);
         InputStream in = comPort.getInputStream();
-        try
-        {
-            for (int j = 0; j < 1000; ++j)
-                System.out.print((char)in.read());
-            in.close();
-        } catch (Exception e) { e.printStackTrace(); }
+
+
+       // portCB.getItems().clear();
+
+        SerialPort[] commPorts = SerialPort.getCommPorts();
+
+        for (SerialPort commPort : commPorts) {
+
+            portCB.getItems().add(commPort.getSystemPortName());
+        }
+
+
         comPort.closePort();
 
     }
